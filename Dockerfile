@@ -4,10 +4,10 @@ FROM ubuntu
 MAINTAINER rmuktader
 
 # Update the repository sources list
-RUN apt-get update
+RUN apt update
 
 # Install and run apache
-RUN apt-get install -y apache2 && apt-get clean
+RUN apt install -y apache2 && apt-get clean
 
 #ENTRYPOINT ["/usr/sbin/apache2", "-k", "start"]
 
